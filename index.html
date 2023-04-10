@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Weather App- With Bootstrap</title>
+</head>
+<body class="bg-dark bg-lg-primary">
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/about">WeatherApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                    </li>
+                   
+                </ul>
+                <form class="d-flex" role="search">
+                    <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="search" class="btn btn-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav> 
+    <div class="container my-3 bg-dark text-light px-5">
+
+        <main>
+            <h1 class="text-center py-3">Weather of <span id="weatherOf">city</span></h1>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Temperatures</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title"><span id="temp2"></span><small class="text-body-secondary fw-light"> &#8451;</small>
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Temperature is <span id="temp"></span></li>
+                            <li>Min Temperature is <span id="min_temp"></span></li>
+                            <li>Max Temperature is <span id="max_temp"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Humidity Info</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title"><span id="humidity2"></span><small class="text-body-secondary fw-light"> %</small>
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Wind Degree is <span id="wind_degrees"></span></li>
+                            <li>Feels Like <span id="feels_like"></span></li>
+                            <li>Humidity is <span id="humidity"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">Wind Info</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title"><span id="wind_speed2"></span><small class="text-body-secondary fw-light"> /km/hr</small>
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Wind Speed is <span id="wind_speed"></span></li>
+                            <li>Sunrise Time is <span id="sunrise"></span></li>
+                            <li>Sunset Time is <span id="sunset"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <h2 class="display-6 text-center mb-4">Common Weather Details</h2>
+    
+        <div class="table-responsive">
+            <table class="table text-center text-light table-bordered">
+                <thead>
+                    <tr>
+                        <th style="width: 10%;">Details&rarr;</th>
+                        <th>feels_like</th>
+                        <th>humidity</th>
+                        <th>max_temp</th>
+                        <th>min_temp</th>
+                        <th>sunrise</th>
+                        <th>sunset</th>
+                        <th>temp</th>
+                        <th>wind_degrees</th>
+                        <th>wind_speed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="text-start" style="width: 10%;">Lucknow</th>
+                        <td id="Feels_likeTd1"></td>
+                        <td id="HumidityTd1"></td>
+                        <td id="Max_tempTd1"></td>
+                        <td id="Min_tempTd1"></td>
+                        <td id="SunriseTd1"></td>
+                        <td id="SunsetTd1"></td>
+                        <td id="TempTd1"></td>
+                        <td id="Wind_degreesTd1"></td>
+                        <td id="Wind_speedTd1"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start" style="width: 10%;">Punjab</th>
+                        <td id="Feels_likeTd2"></td>
+                        <td id="HumidityTd2"></td>
+                        <td id="Max_tempTd2"></td>
+                        <td id="Min_tempTd2"></td>
+                        <td id="SunriseTd2"></td>
+                        <td id="SunsetTd2"></td>
+                        <td id="TempTd2"></td>
+                        <td id="Wind_degreesTd2"></td>
+                        <td id="Wind_speedTd2"></td>
+                    </tr>
+                </tbody>
+    
+                <tbody>
+                    <tr>
+                        <th scope="row" class="text-start" style="width: 10%;">Ludhiana</th>
+                        <th id="Feels_likeTd3"></th>
+                        <th id="HumidityTd3"></th>
+                        <th id="Max_tempTd3"></th>
+                        <th id="Min_tempTd3"></th>
+                        <th id="SunriseTd3"></th>
+                        <th id="SunsetTd3"></th>
+                        <th id="TempTd3"></th>
+                        <th id="Wind_degreesTd3"></th>
+                        <th id="Wind_speedTd3"></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+    <script src="bootstrap.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

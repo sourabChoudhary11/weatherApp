@@ -1,0 +1,59 @@
+feels_like = feels_like
+humidity = humidity
+humidity2 = humidity
+max_temp = max_temp
+min_temp = min_temp
+sunrise = sunrise
+sunset = sunset
+temp = temp
+temp2 = temp
+wind_degrees = wind_degrees
+wind_speed = wind_speed
+
+feels_likeTd1 = response.feels_like
+humidityTd1 = response.humidity
+humidity2Td1 = response.humidity2
+max_tempTd1 = response.max_temp
+min_tempTd1 = response.min_temp
+sunriseTd1 = response.sunrise
+sunsetTd1 = response.sunset
+tempTd1 = response.temp
+temp2Td1 = response.temp2
+wind_degreesTd1 = response.wind_degrees
+wind_speedTd1 = response.wind_speed
+
+feels_likeTd2 = response.feels_like
+humidityTd2 = response.humidity
+humidity2Td2 = response.humidity2
+max_tempTd2 = response.max_temp
+min_tempTd2 = response.min_temp
+sunriseTd2 = response.sunrise
+sunsetTd2 = response.sunset
+tempTd2 = response.temp
+temp2Td2 = response.temp2
+wind_degreesTd2 = response.wind_degrees
+wind_speedTd2 = response.wind_speed
+
+feels_likeTd3 = response.feels_like
+humidityTd3 = response.humidity
+humidity2Td3 = response.humidity2
+max_tempTd3 = response.max_temp
+min_tempTd3 = response.min_temp
+sunriseTd3 = response.sunrise
+sunsetTd3 = response.sunset
+tempTd3 = response.temp
+temp2Td3 = response.temp2
+wind_degreesTd3 = response.wind_degrees
+wind_speedTd3 = response.wind_speed
+
+<th>feels_likeTd3</th>
+<th>humidityTd3</th>
+<th>humidity2Td3</th>
+<th>max_tempTd3</th>
+<th>min_tempTd3</th>
+<th>sunriseTd3</th>
+<th>sunsetTd3</th>
+<th>tempTd3</th>
+<th>temp2Td3</th>
+<th>wind_degreesTd3</th>
+<th>wind_speedTd3</th>
